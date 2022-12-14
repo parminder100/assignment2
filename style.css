@@ -1,13 +1,24 @@
-body{
+*{
     margin:0px;
+    padding:0px;
+}
+@font-face { font-family: Gotham; src: url('Gotham-Font/Gotham-Light.otf'); } 
+@font-face { font-family: Gotham; font-weight: bold; src: url('Gotham-Font/Gotham-Black.otf');}
+:root {
+    --red: #9B1E26;
+}
+body{
     box-sizing: border-box;
     font-family: 'Gotham', sans-serif;
+}
+.element-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 ul{
     margin:0px;
     padding-inline-start: 0px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
     list-style-type: none;
     display: flex;
     gap:32px;
@@ -24,24 +35,6 @@ h1{
 header{
     background-color: #F5F5F5;
     height: 53px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.first-column{
-    margin:0px;
-    padding-inline-start: 0px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    list-style-type: none;
-    display: flex;
-    gap:32px;
-}
-.second-column{
-    padding-inline-start: 0px;
-    list-style-type: none;
-    display: flex;
-    gap:32px;
 }
 .header-row{
     display: flex;
@@ -58,19 +51,13 @@ header{
 .second-col-items{
     display: flex;
     align-items: baseline;
-    color:#9B1E26;
+    color: var(--red);
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
 }
 .header-navbar-icon{
     margin-left: 8px;
-}
-.navbar-container{
-    width:100%;
-    height:auto;
-    max-width: 1280px;
-    margin:0 auto;
 }
 .navbar-logos{
     display: flex;
@@ -86,25 +73,154 @@ header{
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
-    color: #9B1E26;
+    color: var(--red);
 }
 .nav-content{
     border-bottom: 1px solid #EDEDED;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 80px;
 }
 .navbar-content-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 53px;
 }
 .login-btn{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.navbar-line{
+    border-left: 1px solid #C4C4C4;
+    width: 1px;
+    height: 36px;
+}
+.company-name{
+    color:#0f3fa6;
+}
+.company-heading{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 23px;
+}
+.company-product-features{
+    margin-top: 42px;
+}
+.company-first-column{
+    max-width: 65%;
+}
+.product-features{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.product-features-content{
+    display: flex;
+    margin-bottom: 32px;
+}
+.open-salary-btn{
+    padding: 20px 46px;
+    background: var(--red);
+    border-radius: 120px;
+    color:#ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    border:none;
+}
+.switch-salary{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--red);
+}
+.btn-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 32px;
+}
+.compare-feature{
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.compare-now-link{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--red);
+    margin-bottom: 39px;
+}
+.features-line{
+    width: 1px;
+    height: 30px;
+    border-left: 1px solid#9B1E26;
+    margin-right: 13px;
+}
+.company-element-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.company-second-column{
+    /* display: flex; */
+    max-width: 35%;
+}
+.second-column-items{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    padding: 24px 30px 17px 20px;
+    background: #EEF4FF;
+    border: 1px solid #D1DCF1;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.paperless-salary{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #1A1A1A;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.salary-time{
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 18px;
+    color: var(--red);
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.time-minutes{
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 8px;
+    color: var(--red);
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.second-column-features{
+    padding:20px 20px 24px 20px;
+    background: #DBE4F6;
+    border-radius: 6px;
+}
+.lifetime-free{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.home-loans{
+    margin-top: 31px;
+}
+.see-more-feature{
+    margin-top: 24px;
+    margin-left: 20%;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--red);
+}
+.lifetime-free-name{
+    font-weight: 400;
+    font-size: 16px;
 }
 footer{
     width: 100%;
