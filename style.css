@@ -7,6 +7,10 @@
 :root {
     --red: #9B1E26;
 }
+a{
+    color: unset;
+    text-decoration: none;
+}
 body{
     box-sizing: border-box;
     font-family: 'Gotham', sans-serif;
@@ -108,16 +112,18 @@ header{
     margin-top: 42px;
 }
 .company-first-column{
-    max-width: 65%;
+    width: 701px;
 }
 .product-features{
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 14px;
 }
 .product-features-content{
     display: flex;
     margin-bottom: 32px;
+    width: 636px;
 }
 .open-salary-btn{
     padding: 20px 46px;
@@ -128,11 +134,15 @@ header{
     font-size: 14px;
     text-align: center;
     border:none;
+    cursor: pointer;
 }
 .switch-salary{
     font-weight: 400;
     font-size: 14px;
     color: var(--red);
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
 }
 .btn-content{
     display: flex;
@@ -145,6 +155,7 @@ header{
     font-size: 16px;
     color: #000000;
     margin-bottom: 16px;
+    width: 498px;
 }
 .compare-now-link{
     font-weight: 400;
@@ -162,10 +173,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 18px;
+    position: relative;
 }
 .company-second-column{
     /* display: flex; */
-    max-width: 35%;
+    width: 410px;
+    padding:20px 20px 24px 20px;
+    background: #DBE4F6;
+    border-radius: 6px;
 }
 .second-column-items{
     display: flex;
@@ -224,6 +241,79 @@ header{
 }
 .bank-loans{
     padding: 0px 40px 0px 27px;
+}
+.cognizant-carnival{
+    width: 87px;
+}
+.carnival-image{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bank-now{
+    padding: 8px 20px;
+    background: #FFFFFF;
+    border: 1.5px solid #9B1E26;
+    border-radius: 40px;
+    color:var(--red);
+}
+.work-from-home-text{
+    font-weight: 400;
+    font-size: 14px;
+    width: 294px;
+}
+.work-from-home-content{
+    display: flex;
+    align-items: center;
+    gap:24px;
+}
+.cognizant-carnival-content{
+    max-width: 8%;
+}
+.special-feature-content{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 26px;
+}
+.work-from-home-line{
+    width: 1px;
+    height: 30px;
+    border-left: 1px solid var(--red);
+    margin-left: 32px;
+    margin-right: 8px;
+}
+.iphone-text{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.mobile-app .iphone-first-content{
+    padding-left: 10px;
+}
+.iphone-description{
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.6;
+}
+.iphone-content{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 23px 17px 20px 30px;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    width: 310px;
+}
+.mobile-app{
+    display: flex;
+    gap:14px;
+    margin-bottom: 20px;
+}
+.banner-image{
+    position: absolute;
+    right: 30%;
+    bottom: -1%;
 }
 footer{
     width: 100%;
